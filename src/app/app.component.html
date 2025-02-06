@@ -1,5 +1,5 @@
 <mat-toolbar color="primary">
-  <span>Nagaraju Gubbala</span>
+  <span class="logo">Nagaraju Gubbala</span>
   <span class="spacer"></span>
   <a mat-button href="#about">About</a>
   <a mat-button href="#skills">Skills</a>
@@ -13,16 +13,16 @@
   <button mat-raised-button color="accent">Download Resume</button>
 </section>
 
-<section id="about">
+<section id="about" class="glass-card">
   <h2>About Me</h2>
   <p>
-    I am a Full-Stack Developer with 3+ years of experience in Java, Spring
-    Boot, Angular, and React. Passionate about building scalable and optimized
-    web applications.
+    Passionate **Full-Stack Developer** with 3+ years of experience in **Java,
+    Spring Boot, Angular, and React**. I specialize in building **scalable,
+    high-performance** web applications.
   </p>
 </section>
 
-<section id="skills">
+<section id="skills" class="glass-card">
   <h2>Skills</h2>
   <div *ngFor="let skill of skills">
     <p>{{ skill.name }} - {{ skill.value }}%</p>
@@ -33,7 +33,7 @@
   </div>
 </section>
 
-<section id="projects">
+<section id="projects" class="glass-card">
   <h2>Projects</h2>
   <mat-card *ngFor="let project of projects">
     <img mat-card-image [src]="project.image" alt="{{ project.name }}" />
@@ -45,24 +45,17 @@
   </mat-card>
 </section>
 
-<section id="contact">
+<section id="contact" class="glass-card">
   <h2>Contact Me</h2>
-  <form>
-    <mat-form-field>
-      <mat-label>Name</mat-label>
-      <input matInput type="text" />
-    </mat-form-field>
-
-    <mat-form-field>
-      <mat-label>Email</mat-label>
-      <input matInput type="email" />
-    </mat-form-field>
-
-    <mat-form-field>
-      <mat-label>Message</mat-label>
-      <textarea matInput rows="4"></textarea>
-    </mat-form-field>
-
-    <button mat-raised-button color="primary">Send</button>
-  </form>
+  <p>
+    📧 Email:
+    <a href="mailto:nagarajug1991@outlook.com">nagarajug1991&#64;outlook.com</a>
+  </p>
+  <p>📍 Location: Hyderabad, India</p>
+  <p>
+    🔗 LinkedIn:
+    <a href="https://www.linkedin.com/in/way4contact-nagaraju/" target="_blank"
+      >View Profile</a
+    >
+  </p>
 </section>

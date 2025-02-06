@@ -4,30 +4,69 @@ html,
 body {
   height: 100%;
 }
+/* Global Styles */
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: white;
   text-align: center;
   margin: 0;
+  overflow-x: hidden;
+}
+
+/* Navigation Bar */
+mat-toolbar {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .spacer {
   flex: 1;
 }
 
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+/* Hero Section */
 .hero {
-  text-align: center;
-  margin-top: 100px;
-  padding: 50px;
-  background: linear-gradient(to right, #3f51b5, #2196f3);
-  color: white;
+  padding: 100px 20px;
+  background: url("assets/hero-bg.jpg") no-repeat center center/cover;
 }
 
-section {
-  padding: 50px;
-  text-align: center;
+.highlight {
+  color: #ff9800;
 }
 
+/* Glassmorphism Card */
+.glass-card {
+  margin: 50px auto;
+  max-width: 800px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Project Cards */
 mat-card {
   margin: 20px auto;
   max-width: 500px;
+  transition: transform 0.3s ease-in-out;
+}
+
+mat-card:hover {
+  transform: scale(1.05);
+}
+
+/* Contact Section */
+#contact a {
+  color: #ff9800;
+  font-weight: bold;
 }
