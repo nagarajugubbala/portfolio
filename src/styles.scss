@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.hero {
+  text-align: center;
+  margin-top: 100px;
+  padding: 50px;
+  background: linear-gradient(to right, #3f51b5, #2196f3);
+  color: white;
+}
+
+section {
+  padding: 50px;
+  text-align: center;
+}
+
+mat-card {
+  margin: 20px auto;
+  max-width: 500px;
+}
